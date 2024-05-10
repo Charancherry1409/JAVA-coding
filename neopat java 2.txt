@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String name = scanner.nextLine();
+        int age = scanner.nextInt();
+
+        if (name.length() > 100 || age < 1 || age > 120) {
+           
+            return;
+        }
+
+        System.out.printf("Age of "+name+" is "+age);
+    }
+}

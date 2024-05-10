@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class CodissiaEventManager {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner myObj = new Scanner(System.in);
+
+        // Prompt the user to enter the number of events
+        // System.out.print("Enter the number of events hosted at Codissia: ");
+
+        // Read the input as an integer
+        int numEvents = myObj.nextInt();
+        if (1<=numEvents&&numEvents<=Math.pow(10,6)){
+            System.out.println("The number of events hosted at Codissia is: " + numEvents);
+            return;
+        }
+        else{
+            System.out.println("Invalid input");
+        }
+       
+    }
